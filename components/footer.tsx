@@ -152,7 +152,7 @@ export default function Footer() {
       <div className="border-t border-primary-foreground/10">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-sm mb-4 md:mb-0">&copy; {currentYear} Y2K College. All rights reserved.</p>
+            <p className="text-sm mb-4 md:mb-0">&copy; {currentYear} DevPrompt. All rights reserved.</p>
             <div className="flex space-x-4">
               <Link href="/privacy-policy" className="text-sm hover:text-accent transition-colors">
                 Privacy Policy
