@@ -15,7 +15,7 @@ export default function AboutPage() {
           
         </div>
        
-        <div className="relative h-[300px] md:h-full">
+        <div className="relative h-[300px] md:h-[400px]">
           <Image
             src="/images/y2k-images/about-y2k-college.jpg"
             alt="Y2K College - Learn We Shall - Educational Excellence Since 2000"
