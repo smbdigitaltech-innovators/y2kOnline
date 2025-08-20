@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { motion, useAnimation } from "framer-motion"
@@ -189,7 +189,23 @@ export default function Home() {
   }
 
   // Carousel logic for staff
-  const cardsPerView = 4; // You can make this responsive if you wish
+  const [cardsPerView, setCardsPerView] = useState(4);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 640) {
+        setCardsPerView(1); // 1 card on small screens
+      } else if (window.innerWidth < 1024) {
+        setCardsPerView(2); // 2 cards on medium screens
+      } else {
+        setCardsPerView(4); // 4 cards on large screens
+      }
+    }
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [startIndex, setStartIndex] = useState(0);
 
   const canSlideLeft = startIndex > 0;
