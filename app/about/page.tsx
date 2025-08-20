@@ -11,8 +11,13 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-bold mb-4 text-blue-900">Our Mission</h2>
           <p className="mb-4">
-            At Y2K College, our mission is to provide quality, learner-centered education that empowers students from Grade 8 to 12 to achieve academic excellence and personal growth. We are dedicated to supporting both full-time high school learners and part-time students through a range of flexible learning options. In addition to high school education, Y2K College offers various career-focused courses designed to equip students with practical skills for success in further studies and the workplace. </p>
+           Y2K College partners with students, families, and the community to deliver quality education that meets national standards while nurturing each learner's potential for success in academics, character, and future endeavors.  </p>
           
+        </div>
+        <div>
+          <h2 className="text-2xl font-bold mb-4 text-blue-900"> Vision Statement</h2>
+          <p className="mb-4">
+         Empowering every learner to achieve academic excellence and personal growth in a supportive, innovative learning environment.
         </div>
         <div className="relative h-[300px] md:h-full">
           <Image
@@ -25,24 +30,37 @@ export default function AboutPage() {
       </div>
 
       <div className="mb-16">
-        <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Our Values</h2>
+        <h2 className="text-2xl font-bold mb-6 text-center text-blue-900">Core Values</h2>
+        <p>Our actions and decisions are guided by five fundamental values:</p>
+        <p>EXCEL - Each letter represents a core principle:</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
             {
-              title: "Excellence",
+              title: "E–Excellence",
               description:
-                "We strive for excellence in all aspects of our educational offerings, from curriculum development to student support.",
+                "We strive for high standards in teaching, learning, and service.",
             },
             {
-              title: "Innovation",
+              title: "X–Xcellence in Character",
               description:
-                "We embrace innovation and continuously update our courses to reflect the latest industry trends and technologies.",
+                "We develop integrity, responsibility, and ethical leadership.",
             },
             {
-              title: "Inclusivity",
+              title: "C–Community",
               description:
-                "We believe in creating an inclusive learning environment where all students feel welcome and supported.",
+                "We build strong partnerships with families and stakeholders.",
             },
+            {
+              title: "E–Equity",
+              description:
+                "We provide equal opportunities for all learners without discrimination.",
+            },
+            {
+              title: "L–Lifelong Learning",
+              description:
+                "We foster curiosity, knowledge, and continuous growth.",
+            },
+            
           ].map((value, index) => (
             <Card key={index} className="border-2 border-blue-100">
               <CardContent className="pt-6">
@@ -51,6 +69,56 @@ export default function AboutPage() {
               </CardContent>
             </Card>
           ))}
+        </div>
+      </div>
+
+      <div className="mb-16">
+        <h2 className="text-2xl font-bold mb-6 text-blue-900">Quality Commitment</h2>
+        <p className="mb-4">
+         Y2K College is committed to compliance excellence by meeting and exceeding all WCED, UMALUSI, SAQA, and National Education Department requirements. We uphold the highest educational standards, delivering a curriculum that equips students for academic success and future opportunities. </p>
+        <p className="mb-4">
+         Through continuous improvement, we regularly evaluate and enhance our teaching methods, facilities, and student support services. We prioritize stakeholder satisfaction by maintaining open communication with students, parents, staff, and the broader community. Furthermore, we invest in professional development to empower our educators, ensuring they provide world-class instruction.</p>
+        
+        {/* Implementation Guidelines */}
+        <div className="mt-8">
+          <h3 className="text-xl font-semibold mb-4 text-blue-800">Implementation Guidelines</h3>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+              <h4 className="font-bold text-blue-700 mb-2">For Leadership:</h4>
+              <ul className="list-disc list-inside mb-4">
+                <li>Model the EXCEL values in all interactions</li>
+                <li>Make decisions that align with our quality commitments</li>
+                <li>Communicate the vision clearly and consistently</li>
+              </ul>
+              <h4 className="font-bold text-blue-700 mb-2">For Educators:</h4>
+              <ul className="list-disc list-inside mb-4">
+                <li>Integrate values-based learning into daily instruction</li>
+                <li>Maintain high academic standards while supporting individual student needs</li>
+                <li>Participate actively in professional development opportunities</li>
+              </ul>
+              <h4 className="font-bold text-blue-700 mb-2">For Students:</h4>
+              <ul className="list-disc list-inside mb-4">
+                <li>Understand how the EXCEL values apply to their daily choices</li>
+                <li>Take ownership of their learning journey</li>
+                <li>Contribute positively to the school community</li>
+              </ul>
+              <h4 className="font-bold text-blue-700 mb-2">For Parents/Guardians:</h4>
+              <ul className="list-disc list-inside mb-4">
+                <li>Support the college's mission through active engagement</li>
+                <li>Reinforce values-based behavior at home</li>
+                <li>Participate in school community activities</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold text-blue-700 mb-2">Measurement and Accountability:</h4>
+              <ul className="list-disc list-inside">
+                <li>Regular assessment of academic outcomes against national benchmarks</li>
+                <li>Annual stakeholder satisfaction surveys</li>
+                <li>Quarterly review of values implementation across all departments</li>
+                <li>Continuous monitoring of regulatory compliance</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
 
