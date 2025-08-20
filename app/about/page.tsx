@@ -17,7 +17,8 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-bold mb-4 text-blue-900"> Vision Statement</h2>
           <p className="mb-4">
-         Empowering every learner to achieve academic excellence and personal growth in a supportive, innovative learning environment.
+            Empowering every learner to achieve academic excellence and personal growth in a supportive, innovative learning environment.
+          </p>
         </div>
         <div className="relative h-[300px] md:h-full">
           <Image
