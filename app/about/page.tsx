@@ -14,12 +14,7 @@ export default function AboutPage() {
            Y2K College partners with students, families, and the community to deliver quality education that meets national standards while nurturing each learner's potential for success in academics, character, and future endeavors.  </p>
           
         </div>
-        <div>
-          <h2 className="text-2xl font-bold mb-4 text-blue-900"> Vision Statement</h2>
-          <p className="mb-4">
-            Empowering every learner to achieve academic excellence and personal growth in a supportive, innovative learning environment.
-          </p>
-        </div>
+       
         <div className="relative h-[300px] md:h-full">
           <Image
             src="/images/y2k-images/about-y2k-college.jpg"
@@ -27,6 +22,12 @@ export default function AboutPage() {
             fill
             className="object-cover rounded-lg shadow-lg"
           />
+        </div>
+         <div>
+          <h2 className="text-2xl font-bold mb-4 text-blue-900"> Vision Statement</h2>
+          <p className="mb-4">
+            Empowering every learner to achieve academic excellence and personal growth in a supportive, innovative learning environment.
+          </p>
         </div>
       </div>
 
